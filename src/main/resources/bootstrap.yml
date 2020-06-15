@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bh
+  profiles:
+    active: @profileActive@
+  cloud:
+    config:
+      uri: http://manage:8888
+      profile: ${spring.profiles.active}
+      username: sfwl
+      password: a3cWd0SwJ7QgB0wHejvuFe310WYeKvUS
+#      label: master
