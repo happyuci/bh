@@ -16,5 +16,6 @@ public class CorsConfig implements WebFluxConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**").allowedOrigins("*").allowedHeaders("*").allowedMethods("*").maxAge(-1);
         //git 626提交测试 第二次
+        System.out.println("主干提交");
     }
 }
